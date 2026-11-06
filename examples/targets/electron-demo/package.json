@@ -7,6 +7,6 @@
     "start": "electron app/main.js --remote-debugging-port=9333"
   },
   "devDependencies": {
-    "electron": "44.7.0"
+    "electron": "44.9.1"
   }
 }
