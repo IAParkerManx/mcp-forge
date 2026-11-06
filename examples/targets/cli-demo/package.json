@@ -1,0 +1,7 @@
+{
+  "name": "@mcp-forge/cli-demo",
+  "private": true,
+  "type": "module",
+  "description": "Tiny task-tracker CLI used as a safe target for mcp-forge CLI tests.",
+  "bin": { "taskr": "bin/taskr.mjs" }
+}

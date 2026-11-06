@@ -1,0 +1,6 @@
+{
+  "name": "@mcp-forge/android-demo",
+  "private": true,
+  "description": "PocketNotes, a tiny Android app used as a safe target for mcp-forge Android tests.",
+  "scripts": { "build": "./build.sh" }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "@mcp-forge/web-demo",
+  "private": true,
+  "type": "module",
+  "description": "Local notes app used as a safe target for mcp-forge end-to-end tests.",
+  "scripts": {
+    "start": "node server.mjs",
+    "record": "node record-har.mjs"
+  }
+}

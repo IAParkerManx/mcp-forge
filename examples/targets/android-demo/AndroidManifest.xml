@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pocketnotes">
+
+    <application android:label="PocketNotes">
+        <activity android:name=".MainActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="pocketnotes" android:host="note" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".AddNoteActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.pocketnotes.ADD_NOTE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".SettingsActivity" android:exported="false" />
+
+        <provider
+            android:name=".NotesProvider"
+            android:authorities="com.example.pocketnotes.provider"
+            android:exported="true" />
+    </application>
+</manifest>

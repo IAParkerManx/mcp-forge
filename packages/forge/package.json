@@ -1,0 +1,48 @@
+{
+  "name": "mcp-forge",
+  "version": "0.1.0",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "mcp-forge": "dist/cli/main.js"
+  },
+  "scripts": {
+    "build": "node -e \"require('fs').rmSync('dist',{recursive:true,force:true})\" && tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "prepack": "npm run build && node scripts/prepack.mjs"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.133.0",
+    "@modelcontextprotocol/client": "^2.3.1",
+    "@modelcontextprotocol/server": "^2.3.1",
+    "commander": "^15.0.0",
+    "yaml": "^2.9.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.4"
+  },
+  "description": "Turn websites, HTTP APIs, CLI tools, Electron and Tauri apps into tested MCP servers, using evidence from REA.",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "mcp-server",
+    "generator",
+    "reverse-engineering",
+    "rea"
+  ],
+  "files": [
+    "dist",
+    "!dist/**/*.map",
+    "templates",
+    "README.md",
+    "LICENSE",
+    "DISCLAIMER.md"
+  ],
+  "engines": {
+    "node": ">=22.19"
+  }
+}

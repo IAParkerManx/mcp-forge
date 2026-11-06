@@ -1,0 +1,12 @@
+{
+  "name": "@mcp-forge/electron-demo",
+  "private": true,
+  "description": "Small Electron notes app used as a safe target for mcp-forge Electron tests.",
+  "main": "app/main.js",
+  "scripts": {
+    "start": "electron app/main.js --remote-debugging-port=9333"
+  },
+  "devDependencies": {
+    "electron": "44.7.0"
+  }
+}

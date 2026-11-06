@@ -1,0 +1,7 @@
+{
+  "name": "@mcp-forge/rippling-mock",
+  "private": true,
+  "type": "module",
+  "description": "Local stand-in for Rippling's Time API (time entries and time cards), for building and testing a timesheet MCP server without a Rippling account.",
+  "scripts": { "start": "node server.mjs" }
+}

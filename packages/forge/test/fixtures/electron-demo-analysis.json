@@ -1,0 +1,690 @@
+{
+ "_comment": "Trimmed from REA 6.4.0 analyze_javascript_application Evidence for examples/targets/electron-demo/app (bridge and IPC nodes only).",
+ "evidence_id": "ev_03628effb2a2e669080a8748213e43bf7748c3f77afd552294a2a43f10cf8d46",
+ "operation": "analyze_javascript_application",
+ "confidence": "derived",
+ "normalized_result": {
+  "graph": {
+   "nodes": [
+    {
+     "node_id": "jag_node_1ff864339b954bcaed6f9f4e9b9f48fbf4d92bb1e5f3a6f4bd1eb806e88892eb",
+     "kind": "ipc-handler",
+     "observations": [
+      {
+       "label": "window:set-title",
+       "properties": {
+        "side": "main",
+        "operation": "on",
+        "mode": "listen",
+        "channel": "window:set-title",
+        "channel_expression": null,
+        "handler_kind": "inline-function",
+        "handler_location": {
+         "start": {
+          "line": 36,
+          "column": 31
+         },
+         "end": {
+          "line": 36,
+          "column": 117
+         }
+        }
+       },
+       "evidence": {
+        "location": {
+         "available": true,
+         "value": {
+          "kind": "source-range",
+          "source": "main.js",
+          "start": {
+           "line": 36,
+           "column": 31
+          },
+          "end": {
+           "line": 36,
+           "column": 117
+          }
+         }
+        }
+       }
+      }
+     ]
+    },
+    {
+     "node_id": "jag_node_274ad3eaad2497bbce0510ba1ae24436b74ee0e7d3e47441e3a6e41a16314e64",
+     "kind": "ipc-channel",
+     "observations": [
+      {
+       "label": "notes:delete",
+       "properties": {
+        "side": "renderer",
+        "operation": "invoke",
+        "mode": "invoke",
+        "channel": "notes:delete",
+        "channel_expression": null,
+        "resolution": "literal"
+       },
+       "evidence": {
+        "location": {
+         "available": true,
+         "value": {
+          "kind": "source-range",
+          "source": "preload.js",
+          "start": {
+           "line": 9,
+           "column": 22
+          },
+          "end": {
+           "line": 9,
+           "column": 60
+          }
+         }
+        }
+       }
+      },
+      {
+       "label": "notes:delete",
+       "properties": {
+        "side": "main",
+        "operation": "handle",
+        "mode": "handle",
+        "channel": "notes:delete",
+        "channel_expression": null,
+        "resolution": "literal"
+       },
+       "evidence": {
+        "location": {
+         "available": true,
+         "value": {
+          "kind": "source-range",
+          "source": "main.js",
+          "start": {
+           "line": 28,
+           "column": 0
+          },
+          "end": {
+           "line": 34,
+           "column": 2
+          }
+         }
+        }
+       }
+      }
+     ]
+    },
+    {
+     "node_id": "jag_node_3f892240a1622602582c0222f005c10b9e248a7d3d31a99844cc177833293465",
+     "kind": "ipc-channel",
+     "observations": [
+      {
+       "label": "notes:list",
+       "properties": {
+        "side": "renderer",
+        "operation": "invoke",
+        "mode": "invoke",
+        "channel": "notes:list",
+        "channel_expression": null,
+        "resolution": "literal"
+       },
+       "evidence": {
+        "location": {
+         "available": true,
+         "value": {
+          "kind": "source-range",
+          "source": "preload.js",
+          "start": {
+           "line": 6,
+           "column": 25
+          },
+          "end": {
+           "line": 6,
+           "column": 65
+          }
+         }
+        }
+       }
+      },
+      {
+       "label": "notes:list",
+       "properties": {
+        "side": "main",
+        "operation": "handle",
+        "mode": "handle",
+        "channel": "notes:list",
+        "channel_expression": null,
+        "resolution": "literal"
+       },
+       "evidence": {
+        "location": {
+         "available": true,
+         "value": {
+          "kind": "source-range",
+          "source": "main.js",
+          "start": {
+           "line": 14,
+           "column": 0
+          },
+          "end": {
+           "line": 17,
+           "column": 2
+          }
+         }
+        }
+       }
+      }
+     ]
+    },
+    {
+     "node_id": "jag_node_45d7d2f059c2a0b5ce71d4232880292cab86036e1370d8af05192fa20c5892f4",
+     "kind": "ipc-channel",
+     "observations": [
+      {
+       "label": "notes:create",
+       "properties": {
+        "side": "main",
+        "operation": "handle",
+        "mode": "handle",
+        "channel": "notes:create",
+        "channel_expression": null,
+        "resolution": "literal"
+       },
+       "evidence": {
+        "location": {
+         "available": true,
+         "value": {
+          "kind": "source-range",
+          "source": "main.js",
+          "start": {
+           "line": 19,
+           "column": 0
+          },
+          "end": {
+           "line": 27,
+           "column": 2
+          }
+         }
+        }
+       }
+      },
+      {
+       "label": "notes:create",
+       "properties": {
+        "side": "renderer",
+        "operation": "invoke",
+        "mode": "invoke",
+        "channel": "notes:create",
+        "channel_expression": null,
+        "resolution": "literal"
+       },
+       "evidence": {
+        "location": {
+         "available": true,
+         "value": {
+          "kind": "source-range",
+          "source": "preload.js",
+          "start": {
+           "line": 8,
+           "column": 24
+          },
+          "end": {
+           "line": 8,
+           "column": 64
+          }
+         }
+        }
+       }
+      }
+     ]
+    },
+    {
+     "node_id": "jag_node_4740008a90484c74a60c7ab9b8c9c02085f14774a5648370c724941d69e8cabc",
+     "kind": "ipc-handler",
+     "observations": [
+      {
+       "label": "notes:delete",
+       "properties": {
+        "side": "main",
+        "operation": "handle",
+        "mode": "handle",
+        "channel": "notes:delete",
+        "channel_expression": null,
+        "handler_kind": "inline-function",
+        "handler_location": {
+         "start": {
+          "line": 28,
+          "column": 31
+         },
+         "end": {
+          "line": 34,
+          "column": 1
+         }
+        }
+       },
+       "evidence": {
+        "location": {
+         "available": true,
+         "value": {
+          "kind": "source-range",
+          "source": "main.js",
+          "start": {
+           "line": 28,
+           "column": 31
+          },
+          "end": {
+           "line": 34,
+           "column": 1
+          }
+         }
+        }
+       }
+      }
+     ]
+    },
+    {
+     "node_id": "jag_node_7076f22cbeb754ce2559cd1ae1ed55702e519945a6d5b01a49d9f9526a306cd3",
+     "kind": "ipc-handler",
+     "observations": [
+      {
+       "label": "app:info",
+       "properties": {
+        "side": "main",
+        "operation": "handle",
+        "mode": "handle",
+        "channel": "app:info",
+        "channel_expression": null,
+        "handler_kind": "inline-function",
+        "handler_location": {
+         "start": {
+          "line": 35,
+          "column": 27
+         },
+         "end": {
+          "line": 35,
+          "column": 92
+         }
+        }
+       },
+       "evidence": {
+        "location": {
+         "available": true,
+         "value": {
+          "kind": "source-range",
+          "source": "main.js",
+          "start": {
+           "line": 35,
+           "column": 27
+          },
+          "end": {
+           "line": 35,
+           "column": 92
+          }
+         }
+        }
+       }
+      }
+     ]
+    },
+    {
+     "node_id": "jag_node_76f28dee067ead9f9575cad095c353e7a149e00311e76f101da8acf103df1d41",
+     "kind": "ipc-handler",
+     "observations": [
+      {
+       "label": "notes:get",
+       "properties": {
+        "side": "main",
+        "operation": "handle",
+        "mode": "handle",
+        "channel": "notes:get",
+        "channel_expression": null,
+        "handler_kind": "inline-function",
+        "handler_location": {
+         "start": {
+          "line": 18,
+          "column": 28
+         },
+         "end": {
+          "line": 18,
+          "column": 89
+         }
+        }
+       },
+       "evidence": {
+        "location": {
+         "available": true,
+         "value": {
+          "kind": "source-range",
+          "source": "main.js",
+          "start": {
+           "line": 18,
+           "column": 28
+          },
+          "end": {
+           "line": 18,
+           "column": 89
+          }
+         }
+        }
+       }
+      }
+     ]
+    },
+    {
+     "node_id": "jag_node_7eda9d5f66bf9cd07767ee121c8e34507993816e950ee4c1447b4a211a003436",
+     "kind": "ipc-handler",
+     "observations": [
+      {
+       "label": "notes:list",
+       "properties": {
+        "side": "main",
+        "operation": "handle",
+        "mode": "handle",
+        "channel": "notes:list",
+        "channel_expression": null,
+        "handler_kind": "inline-function",
+        "handler_location": {
+         "start": {
+          "line": 14,
+          "column": 29
+         },
+         "end": {
+          "line": 17,
+          "column": 1
+         }
+        }
+       },
+       "evidence": {
+        "location": {
+         "available": true,
+         "value": {
+          "kind": "source-range",
+          "source": "main.js",
+          "start": {
+           "line": 14,
+           "column": 29
+          },
+          "end": {
+           "line": 17,
+           "column": 1
+          }
+         }
+        }
+       }
+      }
+     ]
+    },
+    {
+     "node_id": "jag_node_8e675543797cde7f16604cff5603731532a69ac309cbfa27e352cca33b7d66e4",
+     "kind": "ipc-channel",
+     "observations": [
+      {
+       "label": "notes:get",
+       "properties": {
+        "side": "renderer",
+        "operation": "invoke",
+        "mode": "invoke",
+        "channel": "notes:get",
+        "channel_expression": null,
+        "resolution": "literal"
+       },
+       "evidence": {
+        "location": {
+         "available": true,
+         "value": {
+          "kind": "source-range",
+          "source": "preload.js",
+          "start": {
+           "line": 7,
+           "column": 19
+          },
+          "end": {
+           "line": 7,
+           "column": 54
+          }
+         }
+        }
+       }
+      },
+      {
+       "label": "notes:get",
+       "properties": {
+        "side": "main",
+        "operation": "handle",
+        "mode": "handle",
+        "channel": "notes:get",
+        "channel_expression": null,
+        "resolution": "literal"
+       },
+       "evidence": {
+        "location": {
+         "available": true,
+         "value": {
+          "kind": "source-range",
+          "source": "main.js",
+          "start": {
+           "line": 18,
+           "column": 0
+          },
+          "end": {
+           "line": 18,
+           "column": 90
+          }
+         }
+        }
+       }
+      }
+     ]
+    },
+    {
+     "node_id": "jag_node_acf62b08254e88f14f461f3aab0e1c290e444d2a7dde28a257689616b47de5fa",
+     "kind": "ipc-handler",
+     "observations": [
+      {
+       "label": "notes:create",
+       "properties": {
+        "side": "main",
+        "operation": "handle",
+        "mode": "handle",
+        "channel": "notes:create",
+        "channel_expression": null,
+        "handler_kind": "inline-function",
+        "handler_location": {
+         "start": {
+          "line": 19,
+          "column": 31
+         },
+         "end": {
+          "line": 27,
+          "column": 1
+         }
+        }
+       },
+       "evidence": {
+        "location": {
+         "available": true,
+         "value": {
+          "kind": "source-range",
+          "source": "main.js",
+          "start": {
+           "line": 19,
+           "column": 31
+          },
+          "end": {
+           "line": 27,
+           "column": 1
+          }
+         }
+        }
+       }
+      }
+     ]
+    },
+    {
+     "node_id": "jag_node_c9ddce426a43f18278f76fea3d314469611da8bda9b192ff558bfe0c38336218",
+     "kind": "context-bridge-api",
+     "observations": [
+      {
+       "label": "desknotes",
+       "properties": {
+        "world": "main",
+        "world_id": null,
+        "api_key": "desknotes",
+        "api_key_expression": null,
+        "api_status": "object-literal",
+        "members": [
+         "appInfo",
+         "createNote",
+         "deleteNote",
+         "getNote",
+         "listNotes",
+         "setTitle"
+        ],
+        "unknown_members": 0
+       },
+       "evidence": {
+        "location": {
+         "available": true,
+         "value": {
+          "kind": "source-range",
+          "source": "preload.js",
+          "start": {
+           "line": 4,
+           "column": 0
+          },
+          "end": {
+           "line": 12,
+           "column": 2
+          }
+         }
+        }
+       }
+      }
+     ]
+    },
+    {
+     "node_id": "jag_node_dfac90d2d3ebdb51006eaecddd8f3e295d8337f390fd18e13383d15fd549fce2",
+     "kind": "ipc-channel",
+     "observations": [
+      {
+       "label": "window:set-title",
+       "properties": {
+        "side": "renderer",
+        "operation": "send",
+        "mode": "send",
+        "channel": "window:set-title",
+        "channel_expression": null,
+        "resolution": "literal"
+       },
+       "evidence": {
+        "location": {
+         "available": true,
+         "value": {
+          "kind": "source-range",
+          "source": "preload.js",
+          "start": {
+           "line": 11,
+           "column": 23
+          },
+          "end": {
+           "line": 11,
+           "column": 66
+          }
+         }
+        }
+       }
+      },
+      {
+       "label": "window:set-title",
+       "properties": {
+        "side": "main",
+        "operation": "on",
+        "mode": "listen",
+        "channel": "window:set-title",
+        "channel_expression": null,
+        "resolution": "literal"
+       },
+       "evidence": {
+        "location": {
+         "available": true,
+         "value": {
+          "kind": "source-range",
+          "source": "main.js",
+          "start": {
+           "line": 36,
+           "column": 0
+          },
+          "end": {
+           "line": 36,
+           "column": 118
+          }
+         }
+        }
+       }
+      }
+     ]
+    },
+    {
+     "node_id": "jag_node_dfca6437fac24061ee5f7ef36c552420d8271858e7ecc29950c1da32eccf0a79",
+     "kind": "ipc-channel",
+     "observations": [
+      {
+       "label": "app:info",
+       "properties": {
+        "side": "main",
+        "operation": "handle",
+        "mode": "handle",
+        "channel": "app:info",
+        "channel_expression": null,
+        "resolution": "literal"
+       },
+       "evidence": {
+        "location": {
+         "available": true,
+         "value": {
+          "kind": "source-range",
+          "source": "main.js",
+          "start": {
+           "line": 35,
+           "column": 0
+          },
+          "end": {
+           "line": 35,
+           "column": 93
+          }
+         }
+        }
+       }
+      },
+      {
+       "label": "app:info",
+       "properties": {
+        "side": "renderer",
+        "operation": "invoke",
+        "mode": "invoke",
+        "channel": "app:info",
+        "channel_expression": null,
+        "resolution": "literal"
+       },
+       "evidence": {
+        "location": {
+         "available": true,
+         "value": {
+          "kind": "source-range",
+          "source": "preload.js",
+          "start": {
+           "line": 10,
+           "column": 17
+          },
+          "end": {
+           "line": 10,
+           "column": 47
+          }
+         }
+        }
+       }
+      }
+     ]
+    }
+   ]
+  }
+ }
+}
